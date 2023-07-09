@@ -43,10 +43,11 @@ a{
 /* Start Header */
 .header{
 
+    background-color: #2222;
 
 }
 .header .container{
-
+    
 }
 
 .header .container .row.mnu-1{
@@ -55,15 +56,24 @@ a{
     align-items: center;
     color: 777;
     position: relative;
+    
 }
 .header .mnu-1 .user-infos{
 display: flex;
-   
+align-items: center;
+text-align: center;
+padding: 10px;
 
-  
+
 }
 .header .mnu-1 .user-info ul:first-of-type li{
     padding-right: 10px;
+}
+.user-info{
+    flex: 1;
+}
+.header .mnu-1 .user-info  a{
+    color: #777;
 }
 .header .container .row.mnu-1 .droped{
     padding: 20px;
@@ -75,6 +85,8 @@ display: flex;
     display: none;
     left: -10px;
     width: 200px;
+    z-index: 100;
+    background-color: white;
 }
 .header .container .user-info ul li:hover .droped{
     transform: translateY(-8px);
@@ -117,7 +129,7 @@ display: flex;
 
 .header .user-info .user-log{
     width: fit-content;
-    padding: 20px;
+    padding: 10px;
 }
 .header .user-info .user-log h4{
     position: relative;
@@ -140,5 +152,37 @@ display: flex;
     padding: 10px;
     display: block;
     color: #777;
+}
+/* logo */
+.header .container .row.mnu-1 .logo a{
+    color: #777;
+    font-weight: 400;
+    display: block;
+    padding:  10px;
+    text-align: center;
+    height: 50px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.header .main-categ {
+    flex: 1;
+}
+.header .main-categ ul{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.header .main-categ ul li a{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #777;
+   height: 50px;
 }
 /* End Header */
