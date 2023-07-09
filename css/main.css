@@ -56,13 +56,13 @@ a{
     align-items: center;
     color: 777;
     position: relative;
-    
+    flex-wrap: wrap;    
 }
 .header .mnu-1 .user-infos{
 display: flex;
 align-items: center;
 text-align: center;
-padding: 10px;
+padding: 10px 0;
 
 
 }
@@ -83,7 +83,7 @@ padding: 10px;
     transition: 0.3s;
     position: absolute;
     display: none;
-    left: -10px;
+    left: 0;
     width: 200px;
     z-index: 100;
     background-color: white;
@@ -135,6 +135,7 @@ padding: 10px;
     position: relative;
     width: fit-content;
     padding-bottom: 10px;
+    margin: 0 auto;
 }
 .header .user-info .user-log h4::before{
     content: "";
@@ -145,14 +146,17 @@ padding: 10px;
     left: 0;
     background-color: #ddd;
 }
-.header .user-info .user-log ul{
+.header .user-info .user-det ul{
     margin-top: 10px;
 }
-.header .user-info .user-log ul li a{
-    padding: 10px;
-    display: block;
+.header .user-info .user-det ul li a{
+    padding: 15px 0;
+    display: flex;
     color: #777;
+  
+    
 }
+
 /* logo */
 .header .container .row.mnu-1 .logo a{
     color: #777;
@@ -184,5 +188,6 @@ padding: 10px;
     font-size: 14px;
     color: #777;
    height: 50px;
+   min-width: 80px;
 }
 /* End Header */
