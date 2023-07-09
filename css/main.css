@@ -1,0 +1,144 @@
+/* Start Global Roles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* start Container */
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small Screen */
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+/* Meduim Screen */
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+/* Larg screen */
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* End Container */
+/* End Global Roles */
+/* Start Header */
+.header{
+
+
+}
+.header .container{
+
+}
+
+.header .container .row.mnu-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: 777;
+    position: relative;
+}
+.header .mnu-1 .user-infos{
+display: flex;
+   
+
+  
+}
+.header .mnu-1 .user-info ul:first-of-type li{
+    padding-right: 10px;
+}
+.header .container .row.mnu-1 .droped{
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    transform: translateY(30px);
+    transition: 0.3s;
+    position: absolute;
+    display: none;
+    left: -10px;
+    width: 200px;
+}
+.header .container .user-info ul li:hover .droped{
+    transform: translateY(-8px);
+    display: block;
+
+
+}
+.header .container .row.mnu-1 .droped select{
+    width: 100%;
+    padding: 10px;
+    background-color: #e6e6e6;
+}
+.header .container .row.mnu-1 .droped select option{
+    width: 100%;
+    background-color: white;
+}
+.header .contact h2{
+    font-size: 15px;
+    color: 777;
+    position: relative;
+    padding-left: 10px;
+}
+.header .contact h2::before{
+    content: "\f590";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    left : -10px;
+}
+.header .contact p{
+    margin-top: 10px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.header .user-info ul li:nth-child(3),
+.header .user-info ul li:nth-child(4){
+    display: flex;
+    gap: 2px;
+}
+
+.header .user-info .user-log{
+    width: fit-content;
+    padding: 20px;
+}
+.header .user-info .user-log h4{
+    position: relative;
+    width: fit-content;
+    padding-bottom: 10px;
+}
+.header .user-info .user-log h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #ddd;
+}
+.header .user-info .user-log ul{
+    margin-top: 10px;
+}
+.header .user-info .user-log ul li a{
+    padding: 10px;
+    display: block;
+    color: #777;
+}
+/* End Header */
